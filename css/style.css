@@ -186,15 +186,12 @@ a:hover { color: var(--primary); text-decoration: underline; }
   width: 180px;
   height: 180px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-serif);
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--primary);
-  background: var(--primary-light);
+  object-fit: cover;
   border: 1px solid var(--border);
+}
+
+.hero-avatar[alt] {
+  background: var(--primary-light);
 }
 
 /* --- Section (学术文档风格) --- */
