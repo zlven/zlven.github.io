@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zilin Li - Academic Homepage | Generative Models | Diffusion Models">
+  <meta name="description" content="Zilin Li - Academic Homepage | Diffusion Models | AIGC">
   <title>Zilin Li · Academic Homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,12 +37,13 @@
         <p class="hero-degree">B.S. in Software Engineering (2023–), Sichuan University</p>
         <p class="hero-affiliation">Sichuan University, Chengdu, China</p>
         <p class="hero-interests">
-          <strong>Research Interests:</strong> Generative Models · Diffusion Models · Machine Learning
+          <strong>Research Interests:</strong> Efficient Diffusion Inference · DiT Acceleration · AIGC
         </p>
         <div class="hero-contact">
+          <span>📞 (+86) 19980528634</span>
           <span>📧 <a href="mailto:2023141461067@stu.scu.edu.cn">2023141461067@stu.scu.edu.cn</a></span>
           <span>🐙 <a href="https://github.com/zlven" target="_blank">github.com/zlven</a></span>
-          <span>📄 <a href="#">Google Scholar</a></span>
+          <span>📝 <a href="https://blog.csdn.net/Li_zeven" target="_blank">CSDN</a></span>
         </div>
         <div class="hero-buttons">
           <a href="#" class="btn btn-primary" download>📄 Download CV (PDF)</a>
@@ -67,13 +68,16 @@
           at <strong>Sichuan University</strong>. My research focuses on
           <strong>efficient inference of diffusion models</strong>,
           particularly sampling acceleration and feature caching for Diffusion Transformers (DiT).
+          I have solid foundations in data structures, algorithms, and operating systems,
+          and am proficient in Python and Java.
         </p>
         <p>
           My work is under review or accepted at AAAI 2027, NeurIPS 2026, and ACM Multimedia 2026,
           covering fractional-order extrapolation, heterogeneity-driven safeguarding, and
-          implicit manifold propagation for DiT acceleration. I also maintain
-          <strong><a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a></strong>,
-          an open-source project that integrates RLHF with discrete diffusion models.
+          implicit manifold propagation for DiT acceleration. I also maintain open-source
+          projects including <strong><a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a></strong>
+          and <strong><a href="https://github.com/zlven/EmotionCloud" target="_blank">EMOcloud</a></strong>.
+          CET-4: 529, CET-6: 469.
         </p>
         <p>
           I am seeking a Ph.D. or Master's position starting in Fall 2026 to continue
@@ -134,7 +138,7 @@
             <p class="pub-authors">Jinlong Yang, Jinke Wu, <strong>Zilin Li</strong>, Yao Zhou*</p>
             <p class="pub-venue"><em>ACM Multimedia (MM)</em>, 2026. <span class="pub-badge">CCF-A</span></p>
             <div class="pub-links">
-              <a href="https://openreview.net/forum?id=yS6SgtlVXe" target="_blank">[OpenReview]</a>
+              <a href="https://openreview.net" target="_blank">[OpenReview]</a>
             </div>
           </div>
         </div>
@@ -150,25 +154,40 @@
 
       <div class="research-item reveal">
         <h3>
+          <a href="https://github.com/zlven/EmotionCloud" target="_blank">EMOcloud</a>
+          <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 8px;">
+            · AIGC Psychological Support System · Software Copyright 2025SR1818821
+          </span>
+        </h3>
+        <p class="research-desc">
+          A digital psychological support system built with SpringBoot + Uniapp Vue3 + Vivo LLM.
+          Registered software copyright obtained.
+        </p>
+        <div class="research-tags">
+          <span class="research-tag">SpringBoot</span>
+          <span class="research-tag">Vue3</span>
+          <span class="research-tag">AIGC</span>
+          <span class="research-tag">LLM</span>
+        </div>
+      </div>
+
+      <div class="research-item reveal">
+        <h3>
           <a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a>
           <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 8px;">
             · Discrete Diffusion + RLHF for LaTeX Generation
           </span>
         </h3>
         <p class="research-desc">
-          Aligns a discrete diffusion model (SEDD) with RLHF via PPO to generate
-          high-quality LaTeX mathematical formulas. Implements a complete SFT → RLHF
-          pipeline, including supervised fine-tuning on the S1K-1.1 math dataset,
-          custom multi-dimensional reward functions (syntax correctness, math quality,
-          exploration bonus), and PPO-based alignment training. Features sparse
-          optimizations for the GPT-2 large-vocabulary setting, enabling single-GPU training.
+          Aligns discrete diffusion models (SEDD) with RLHF via PPO for generating
+          high-quality LaTeX formulas. Implements a complete SFT → RLHF pipeline
+          with sparse optimizations for single-GPU training.
         </p>
         <div class="research-tags">
           <span class="research-tag">PyTorch</span>
           <span class="research-tag">SEDD</span>
           <span class="research-tag">PPO</span>
           <span class="research-tag">RLHF</span>
-          <span class="research-tag">LaTeX</span>
           <span class="research-tag">Diffusion Models</span>
         </div>
       </div>
@@ -182,9 +201,24 @@
       </div>
 
       <div class="honors-list">
-        <p style="color: var(--text-muted); font-size: 0.9rem; padding: 10px 0;">
-          To be added ...
-        </p>
+        <div class="honor-item reveal">
+          <span class="honor-year">2025</span>
+          <div class="honor-info">
+            <h4>C4-AIGC Innovation Competition, Southwest China Third Prize</h4>
+          </div>
+        </div>
+        <div class="honor-item reveal">
+          <span class="honor-year">2025</span>
+          <div class="honor-info">
+            <h4>National Mathematical Contest in Modeling, Sichuan Second Prize</h4>
+          </div>
+        </div>
+        <div class="honor-item reveal">
+          <span class="honor-year">2024</span>
+          <div class="honor-info">
+            <h4>National Mathematical Contest in Modeling, Sichuan First Prize</h4>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -195,6 +229,7 @@
       <p class="footer-text">© <span id="currentYear"></span> Zilin Li</p>
       <div class="footer-links">
         <a href="https://github.com/zlven" target="_blank" title="GitHub">🐙</a>
+        <a href="https://blog.csdn.net/Li_zeven" target="_blank" title="CSDN">📝</a>
         <a href="mailto:2023141461067@stu.scu.edu.cn" title="Email">✉️</a>
       </div>
     </div>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="李子林 - 个人学术主页 | 生成模型 | 扩散模型">
+  <meta name="description" content="李子林 - 个人学术主页 | 扩散模型 | AIGC">
   <title>李子林 · 学术主页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,12 +37,13 @@
         <p class="hero-degree">四川大学 · 软件工程 本科 (2023 级)</p>
         <p class="hero-affiliation">四川大学，中国 · 成都</p>
         <p class="hero-interests">
-          <strong>研究兴趣：</strong>生成模型 · 扩散模型 · 机器学习
+          <strong>研究兴趣：</strong>扩散模型高效推理 · DiT 加速 · AIGC
         </p>
         <div class="hero-contact">
+          <span>📞 (+86) 19980528634</span>
           <span>📧 <a href="mailto:2023141461067@stu.scu.edu.cn">2023141461067@stu.scu.edu.cn</a></span>
           <span>🐙 <a href="https://github.com/zlven" target="_blank">github.com/zlven</a></span>
-          <span>📄 <a href="#">Google Scholar</a></span>
+          <span>📝 <a href="https://blog.csdn.net/Li_zeven" target="_blank">CSDN</a></span>
         </div>
         <div class="hero-buttons">
           <a href="#" class="btn btn-primary" download>📄 下载简历 (PDF)</a>
@@ -65,12 +66,14 @@
         <p>
           四川大学软件工程专业 2023 级本科生，研究方向为 <strong>扩散模型高效推理</strong>，
           重点关注 Diffusion Transformers (DiT) 的采样加速与特征缓存机制。
+          掌握深度学习理论，具备扎实的数据结构与算法、操作系统等计算机基础；
+          熟练使用 Python、Java 开发。
         </p>
         <p>
           相关论文分别投稿至 AAAI 2027、NeurIPS 2026 及 ACM Multimedia 2026，
           内容涵盖扩散模型的分数阶推演、异质性保护加速以及隐空间指数传播等方向。
-          同时维护开源项目 <strong><a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a></strong>，
-          将强化学习引入离散扩散模型的对齐训练。
+          同时维护 <strong><a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a></strong>
+          等开源项目。英语 CET4: 529，CET6: 469。
         </p>
         <p>
           希望在 2026 年秋季进入硕士或博士项目，在生成式人工智能方向继续深入研究。
@@ -138,10 +141,29 @@
       </div>
     </section>
 
-    <!-- ===== 项目 (突出 sedd) ===== -->
+    <!-- ===== 项目 ===== -->
     <section class="section" id="projects">
       <div class="section-header reveal">
         <h2 class="section-title">开源项目</h2>
+      </div>
+
+      <div class="research-item reveal">
+        <h3>
+          <a href="https://github.com/zlven/EmotionCloud" target="_blank">EMOcloud</a>
+          <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 8px;">
+            · AIGC 心理支持系统 · 软著 2025SR1818821
+          </span>
+        </h3>
+        <p class="research-desc">
+          基于 SpringBoot + Uniapp Vue3 + Vivo 蓝心大模型开发的数字化心理支持系统，
+          已获得软件著作权登记证书。
+        </p>
+        <div class="research-tags">
+          <span class="research-tag">SpringBoot</span>
+          <span class="research-tag">Vue3</span>
+          <span class="research-tag">AIGC</span>
+          <span class="research-tag">大模型</span>
+        </div>
       </div>
 
       <div class="research-item reveal">
@@ -153,9 +175,7 @@
         </h3>
         <p class="research-desc">
           将离散扩散模型（SEDD）与强化学习（PPO）结合，通过 RLHF 对齐
-          生成高质量 LaTeX 数学公式。项目实现了完整的 SFT → RLHF 流程，
-          包括基于 S1K-1.1 数据集的监督微调、自定义多维奖励函数
-          （语法正确性、数学内容质量、探索奖励等），以及基于 PPO 的对齐训练。
+          生成高质量 LaTeX 数学公式。实现了 SFT → RLHF 完整流程，
           针对 GPT-2 大词表场景做了稀疏优化，单卡 GPU 即可训练。
         </p>
         <div class="research-tags">
@@ -163,12 +183,9 @@
           <span class="research-tag">SEDD</span>
           <span class="research-tag">PPO</span>
           <span class="research-tag">RLHF</span>
-          <span class="research-tag">LaTeX</span>
           <span class="research-tag">Diffusion Models</span>
         </div>
       </div>
-
-      <!-- ★ 后续可以在这里添加更多项目 -->
 
     </section>
 
@@ -179,18 +196,24 @@
       </div>
 
       <div class="honors-list">
-        <p style="color: var(--text-muted); font-size: 0.9rem; padding: 10px 0;">
-          待补充 ...
-        </p>
-        <!--
         <div class="honor-item reveal">
           <span class="honor-year">2025</span>
           <div class="honor-info">
-            <h4>奖项名称</h4>
-            <span class="honor-org">颁发单位</span>
+            <h4>中国高校计算机大赛-AIGC创新赛 西南赛区三等奖</h4>
           </div>
         </div>
-        -->
+        <div class="honor-item reveal">
+          <span class="honor-year">2025</span>
+          <div class="honor-info">
+            <h4>全国大学生数学建模竞赛 四川省二等奖</h4>
+          </div>
+        </div>
+        <div class="honor-item reveal">
+          <span class="honor-year">2024</span>
+          <div class="honor-info">
+            <h4>全国大学生数学建模竞赛 四川省一等奖</h4>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -201,6 +224,7 @@
       <p class="footer-text">© <span id="currentYear"></span> 李子林</p>
       <div class="footer-links">
         <a href="https://github.com/zlven" target="_blank" title="GitHub">🐙</a>
+        <a href="https://blog.csdn.net/Li_zeven" target="_blank" title="CSDN">📝</a>
         <a href="mailto:2023141461067@stu.scu.edu.cn" title="Email">✉️</a>
       </div>
     </div>
