@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="李子林 - 个人学术主页">
+  <meta name="description" content="李子林 - 个人学术主页 | 生成模型 | 扩散模型">
   <title>李子林 · 学术主页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
       <div class="nav-links" id="navLinks">
         <a href="#bio">简介</a>
         <a href="#publications">论文</a>
-        <a href="#research">研究</a>
+        <a href="#projects">项目</a>
         <a href="#honors">荣誉</a>
         <a href="en.html" title="English">🌐 EN</a>
       </div>
@@ -29,16 +29,15 @@
     </div>
   </nav>
 
-  <!-- ===== Hero / 个人信息 ===== -->
+  <!-- ===== Hero ===== -->
   <header class="hero">
     <div class="container">
       <div>
-        <!-- ★ 修改为你的姓名 -->
         <h1 class="hero-name">李子林</h1>
-        <p class="hero-degree">计算机科学与技术 · 本科 [年级]</p>
-        <p class="hero-affiliation">[你的大学]，中国 · [城市]</p>
+        <p class="hero-degree">四川大学 · 软件工程 本科 (2023 级)</p>
+        <p class="hero-affiliation">四川大学，中国 · 成都</p>
         <p class="hero-interests">
-          <strong>研究兴趣：</strong>机器学习 · 自然语言处理 · 计算机视觉
+          <strong>研究兴趣：</strong>生成模型 · 扩散模型 · 机器学习
         </p>
         <div class="hero-contact">
           <span>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></span>
@@ -46,7 +45,6 @@
           <span>📄 <a href="#">Google Scholar</a></span>
         </div>
         <div class="hero-buttons">
-          <!-- ★ 替换为你的简历文件 -->
           <a href="#" class="btn btn-primary" download>📄 下载简历 (PDF)</a>
         </div>
       </div>
@@ -64,16 +62,15 @@
         <h2 class="section-title">简介</h2>
       </div>
       <div class="bio-text reveal">
-        <!-- ★ 修改为你的自我介绍 -->
         <p>
-          我目前就读于 [你的大学] 计算机科学与技术专业，GPA [XX/100]，专业排名 Top X%。
-          研究方向包括机器学习、自然语言处理和计算机视觉。目前已发表学术论文 X 篇，
-          其中以第一作者身份在 [顶级会议/期刊] 发表论文 X 篇。
+          我目前就读于 <strong>四川大学</strong> 软件工程专业（2023 级本科），研究方向主要为
+          <strong>生成模型</strong> 与 <strong>扩散模型</strong>，特别是离散扩散模型在文本生成中的应用。
+          我热衷于探索生成式人工智能的前沿方向，并致力于将理论成果转化为开源实践。
         </p>
         <p>
-          本科期间，我参与了 [X] 项科研项目，涉及情感分析、图像识别和知识图谱等领域。
-          曾获国家奖学金、[竞赛名称] 全国一等奖等荣誉。
-          希望能在 2026 年秋季进入硕士或博士项目继续深造，在人工智能领域做出有影响力的研究。
+          在 GitHub 上维护了离散扩散模型的开源项目 <strong>sedd</strong>，
+          旨在提供高效、清晰的扩散模型实现。未来希望能在生成模型领域继续深造，
+          攻读硕士或博士学位，做出有影响力的研究工作。
         </p>
       </div>
     </section>
@@ -86,13 +83,16 @@
       </div>
 
       <div class="pub-list">
-        <!-- ★ 按时间倒序添加论文 -->
-
+        <p style="color: var(--text-muted); font-size: 0.9rem; padding: 20px 0;">
+          论文信息待补充 ...
+        </p>
+        <!-- ★ 后续用以下格式添加论文 -->
+        <!--
         <div class="pub-item reveal">
           <span class="pub-number">[1]</span>
           <div class="pub-content">
-            <h4>[论文标题]：关于 [问题] 的 [方法] 研究</h4>
-            <p class="pub-authors"><strong>L. Li</strong>（李子林），[Co-author]，[Supervisor]*</p>
+            <h4>[论文标题]</h4>
+            <p class="pub-authors"><strong>Z. Li</strong>（李子林），[Co-author]，[Supervisor]*</p>
             <p class="pub-venue"><em>[会议/期刊名称]</em>，2025. <span class="pub-badge">CCF-A</span></p>
             <div class="pub-links">
               <a href="#">[PDF]</a>
@@ -101,53 +101,38 @@
             </div>
           </div>
         </div>
-
-        <div class="pub-item reveal">
-          <span class="pub-number">[2]</span>
-          <div class="pub-content">
-            <h4>[论文标题]：一种面向 [领域] 的 [方法]</h4>
-            <p class="pub-authors"><strong>L. Li</strong>（李子林），[Supervisor]*</p>
-            <p class="pub-venue"><em>[会议/期刊名称]</em>，2024. <span class="pub-badge">CCF-B</span></p>
-            <div class="pub-links">
-              <a href="#">[PDF]</a>
-              <a href="#">[DOI]</a>
-            </div>
-          </div>
-        </div>
-
+        -->
       </div>
     </section>
 
-    <!-- ===== 研究 ===== -->
-    <section class="section" id="research">
+    <!-- ===== 项目 (突出 sedd) ===== -->
+    <section class="section" id="projects">
       <div class="section-header reveal">
-        <h2 class="section-title">研究经历</h2>
+        <h2 class="section-title">开源项目</h2>
       </div>
 
-      <!-- ★ 修改研究项目 -->
       <div class="research-item reveal">
-        <h3>基于深度学习的文本情感分析</h3>
+        <h3>
+          <a href="https://github.com/zlven/sedd" target="_blank">sedd</a>
+          <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 8px;">
+            ⭐ [X] · 扩散模型
+          </span>
+        </h3>
         <p class="research-desc">
-          使用 BERT 和 Bi-LSTM 构建情感分析模型，在中文评论数据集上达到 92.3% 的准确率。
-          负责模型设计与实验。相关论文发表于 [会议名称]。
+          离散扩散模型（Score Entropy Discrete Diffusion）的开源实现。
+          项目聚焦于将扩散模型应用于离散数据（如文本）的生成任务，
+          提供了完整的训练、采样和评估流程。主要包括模型架构实现、
+          训练代码以及预训练模型权重。
         </p>
         <div class="research-tags">
           <span class="research-tag">PyTorch</span>
-          <span class="research-tag">BERT</span>
+          <span class="research-tag">Diffusion Models</span>
+          <span class="research-tag">Discrete Data</span>
+          <span class="research-tag">Text Generation</span>
         </div>
       </div>
 
-      <div class="research-item reveal">
-        <h3>轻量化图像分类网络</h3>
-        <p class="research-desc">
-          基于 MobileNetV3 架构进行改进，在保持精度的前提下将参数量减少 40%。
-          项目已开源，获得 [X] 星。
-        </p>
-        <div class="research-tags">
-          <span class="research-tag">TensorFlow</span>
-          <span class="research-tag">模型压缩</span>
-        </div>
-      </div>
+      <!-- ★ 后续可以在这里添加更多项目 -->
 
     </section>
 
@@ -158,34 +143,23 @@
       </div>
 
       <div class="honors-list">
-        <!-- ★ 修改为你的荣誉 -->
+        <p style="color: var(--text-muted); font-size: 0.9rem; padding: 10px 0;">
+          待补充 ...
+        </p>
+        <!--
         <div class="honor-item reveal">
           <span class="honor-year">2025</span>
           <div class="honor-info">
-            <h4>国家奖学金</h4>
-            <span class="honor-org">教育部</span>
+            <h4>奖项名称</h4>
+            <span class="honor-org">颁发单位</span>
           </div>
         </div>
-        <div class="honor-item reveal">
-          <span class="honor-year">2024</span>
-          <div class="honor-info">
-            <h4>[竞赛名称] 全国一等奖</h4>
-            <span class="honor-org">[主办单位]</span>
-          </div>
-        </div>
-        <div class="honor-item reveal">
-          <span class="honor-year">2023-2024</span>
-          <div class="honor-info">
-            <h4>校级优秀学生标兵</h4>
-            <span class="honor-org">[你的大学]</span>
-          </div>
-        </div>
+        -->
       </div>
     </section>
 
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="container">
       <p class="footer-text">© <span id="currentYear"></span> 李子林</p>

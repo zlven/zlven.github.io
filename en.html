@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zilin Li - Academic Homepage | Research | Publications">
+  <meta name="description" content="Zilin Li - Academic Homepage | Generative Models | Diffusion Models">
   <title>Zilin Li · Academic Homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <!-- ★ Switch to zh-CN version -->
-  <link rel="alternate" hreflang="zh" href="index.html">
 </head>
 <body>
 
@@ -21,9 +19,9 @@
       <div class="nav-links" id="navLinks">
         <a href="#bio">About</a>
         <a href="#publications">Publications</a>
-        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#honors">Honors</a>
-        <a href="index.html" title="中文版">🇨🇳</a>
+        <a href="index.html" title="中文版">🇨🇳 中文</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -35,12 +33,11 @@
   <header class="hero">
     <div class="container">
       <div>
-        <!-- ★ Edit your information -->
         <h1 class="hero-name">Zilin Li</h1>
-        <p class="hero-degree">B.S. in Computer Science and Technology · [Year]</p>
-        <p class="hero-affiliation">[Your University], China</p>
+        <p class="hero-degree">B.S. in Software Engineering (2023–), Sichuan University</p>
+        <p class="hero-affiliation">Sichuan University, Chengdu, China</p>
         <p class="hero-interests">
-          <strong>Research Interests:</strong> Machine Learning · Natural Language Processing · Computer Vision
+          <strong>Research Interests:</strong> Generative Models · Diffusion Models · Machine Learning
         </p>
         <div class="hero-contact">
           <span>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></span>
@@ -65,19 +62,17 @@
         <h2 class="section-title">About</h2>
       </div>
       <div class="bio-text reveal">
-        <!-- ★ Edit your bio -->
         <p>
-          I am currently pursuing a B.S. in Computer Science and Technology at [Your University],
-          with a GPA of [XX/100] (Top X%). My research interests include machine learning,
-          natural language processing, and computer vision. I have published X peer-reviewed
-          papers, including X first-author papers at top-tier venues such as [Conference/Journal].
+          I am currently pursuing a B.S. in <strong>Software Engineering</strong> at
+          <strong>Sichuan University</strong> (Class of 2023). My research interests lie in
+          <strong>generative models</strong> and <strong>diffusion models</strong>, with a
+          particular focus on discrete diffusion models for text generation.
         </p>
         <p>
-          During my undergraduate studies, I participated in X research projects covering
-          sentiment analysis, image recognition, and knowledge graphs. I am the recipient of
-          the National Scholarship, first prize in [Competition Name], among other honors.
-          I am seeking a Ph.D. or Master's position starting in Fall 2026 to further pursue
-          impactful research in artificial intelligence.
+          I maintain the open-source project <strong>sedd</strong> on GitHub,
+          an implementation of discrete diffusion models aimed at providing efficient
+          and well-documented code for the research community. I am seeking a Ph.D. or
+          Master's position to further pursue impactful research in generative AI.
         </p>
       </div>
     </section>
@@ -90,14 +85,17 @@
       </div>
 
       <div class="pub-list">
-        <!-- ★ Add your publications in reverse chronological order -->
-
+        <p style="color: var(--text-muted); font-size: 0.9rem; padding: 20px 0;">
+          To be added ...
+        </p>
+        <!-- ★ Add publications here using the format below -->
+        <!--
         <div class="pub-item reveal">
           <span class="pub-number">[1]</span>
           <div class="pub-content">
-            <h4>[Paper Title]: A [Method] for [Problem]</h4>
+            <h4>[Paper Title]</h4>
             <p class="pub-authors"><strong>Z. Li</strong>, [Co-author], [Supervisor]*</p>
-            <p class="pub-venue"><em>[Conference/Journal Name]</em>, 2025. <span class="pub-badge">CCF-A</span></p>
+            <p class="pub-venue"><em>[Conference/Journal]</em>, 2025. <span class="pub-badge">CCF-A</span></p>
             <div class="pub-links">
               <a href="#">[PDF]</a>
               <a href="#">[DOI]</a>
@@ -105,52 +103,34 @@
             </div>
           </div>
         </div>
-
-        <div class="pub-item reveal">
-          <span class="pub-number">[2]</span>
-          <div class="pub-content">
-            <h4>[Paper Title]: A [Approach] for [Domain]</h4>
-            <p class="pub-authors"><strong>Z. Li</strong>, [Supervisor]*</p>
-            <p class="pub-venue"><em>[Conference/Journal Name]</em>, 2024. <span class="pub-badge">CCF-B</span></p>
-            <div class="pub-links">
-              <a href="#">[PDF]</a>
-              <a href="#">[DOI]</a>
-            </div>
-          </div>
-        </div>
-
+        -->
       </div>
     </section>
 
-    <!-- ===== Research ===== -->
-    <section class="section" id="research">
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
       <div class="section-header reveal">
-        <h2 class="section-title">Research Experience</h2>
+        <h2 class="section-title">Open-Source Projects</h2>
       </div>
 
-      <!-- ★ Edit your research projects -->
       <div class="research-item reveal">
-        <h3>Sentiment Analysis with Deep Learning</h3>
+        <h3>
+          <a href="https://github.com/zlven/sedd" target="_blank">sedd</a>
+          <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 8px;">
+            ⭐ [X] · Discrete Diffusion
+          </span>
+        </h3>
         <p class="research-desc">
-          Built a sentiment analysis model using BERT and Bi-LSTM, achieving 92.3% accuracy
-          on a Chinese review dataset. Responsible for model design and experiments.
-          Related paper published at [Conference].
+          An open-source implementation of Score Entropy Discrete Diffusion (SEDD) models.
+          This project focuses on applying diffusion models to discrete data such as text,
+          providing a complete pipeline for training, sampling, and evaluation.
+          Includes model architecture, training scripts, and pretrained weights.
         </p>
         <div class="research-tags">
           <span class="research-tag">PyTorch</span>
-          <span class="research-tag">BERT</span>
-        </div>
-      </div>
-
-      <div class="research-item reveal">
-        <h3>Lightweight Image Classification Network</h3>
-        <p class="research-desc">
-          Improved upon MobileNetV3 architecture, reducing parameters by 40% while
-          maintaining accuracy. The project is open-source with [X] stars.
-        </p>
-        <div class="research-tags">
-          <span class="research-tag">TensorFlow</span>
-          <span class="research-tag">Model Compression</span>
+          <span class="research-tag">Diffusion Models</span>
+          <span class="research-tag">Discrete Data</span>
+          <span class="research-tag">Text Generation</span>
         </div>
       </div>
 
@@ -163,34 +143,14 @@
       </div>
 
       <div class="honors-list">
-        <!-- ★ Edit your honors -->
-        <div class="honor-item reveal">
-          <span class="honor-year">2025</span>
-          <div class="honor-info">
-            <h4>National Scholarship</h4>
-            <span class="honor-org">Ministry of Education, China</span>
-          </div>
-        </div>
-        <div class="honor-item reveal">
-          <span class="honor-year">2024</span>
-          <div class="honor-info">
-            <h4>[Competition Name] — National First Prize</h4>
-            <span class="honor-org">[Organizer]</span>
-          </div>
-        </div>
-        <div class="honor-item reveal">
-          <span class="honor-year">2023–2024</span>
-          <div class="honor-info">
-            <h4>Outstanding Student Award</h4>
-            <span class="honor-org">[Your University]</span>
-          </div>
-        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; padding: 10px 0;">
+          To be added ...
+        </p>
       </div>
     </section>
 
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="container">
       <p class="footer-text">© <span id="currentYear"></span> Zilin Li</p>
