@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="李子林 - 学术主页 | 科研成果 | 求学申请">
-  <title>李子林 | 学术主页</title>
+  <meta name="description" content="李子林 - 个人学术主页">
+  <title>李子林 · 学术主页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,184 +12,184 @@
 </head>
 <body>
 
-  <!-- ==============================
-       导航
-       ============================== -->
+  <!-- ===== 导航 ===== -->
   <nav class="navbar">
     <div class="container">
-      <a href="#" class="nav-logo">LZ<span>.</span></a>
+      <a href="#" class="nav-logo">李子林</a>
       <div class="nav-links" id="navLinks">
+        <a href="#bio">简介</a>
         <a href="#publications">论文</a>
         <a href="#research">研究</a>
         <a href="#honors">荣誉</a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="切换菜单">
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ==============================
-       Hero / 个人信息
-       ============================== -->
-  <section class="hero">
+  <!-- ===== Hero / 个人信息 ===== -->
+  <header class="hero">
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="dot"></span>
-          寻求 2026 年硕/博入学机会
-        </div>
-
-        <!-- ★ 修改个人信息 -->
-        <h1>李子林</h1>
-        <p class="hero-subtitle">[你的大学] · 计算机科学与技术 本科</p>
-
-        <p class="hero-description">
-          研究方向：机器学习、自然语言处理、计算机视觉。GPA [XX/100]，专业排名 Top X%。
-          共发表学术论文 X 篇（含 [顶级会议/期刊] X 篇），获 [竞赛/奖项] X 项。
-          希望在国际化的学术环境中进一步探索人工智能前沿。
+      <div>
+        <!-- ★ 修改为你的姓名 -->
+        <h1 class="hero-name">李子林</h1>
+        <p class="hero-degree">计算机科学与技术 · 本科 [年级]</p>
+        <p class="hero-affiliation">[你的大学]，中国 · [城市]</p>
+        <p class="hero-interests">
+          <strong>研究兴趣：</strong>机器学习 · 自然语言处理 · 计算机视觉
         </p>
-
-        <!-- ★ 联系方式直接放在这里 -->
         <div class="hero-contact">
-          <span>✉️ your.email@example.com</span>
+          <span>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></span>
           <span>🐙 <a href="https://github.com/zlven" target="_blank">github.com/zlven</a></span>
-          <span>📍 中国 · [城市]</span>
+          <span>📄 <a href="#">Google Scholar</a></span>
         </div>
-
         <div class="hero-buttons">
-          <!-- ★ 替换为你的简历 PDF -->
-          <a href="#" class="btn btn-primary" download>📄 下载简历</a>
-          <a href="mailto:your.email@example.com" class="btn btn-outline">✉️ 联系我</a>
+          <!-- ★ 替换为你的简历文件 -->
+          <a href="#" class="btn btn-primary" download>📄 下载简历 (PDF)</a>
         </div>
       </div>
-
       <div class="hero-image">
-        <div class="hero-avatar">
-          <span class="avatar-text">LZL</span>
-        </div>
+        <div class="hero-avatar">LZL</div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ==============================
-       Publications 论文
-       ============================== -->
-  <section class="section" id="publications">
-    <div class="container">
+  <main class="container">
+
+    <!-- ===== 简介 ===== -->
+    <section class="section" id="bio">
       <div class="section-header reveal">
-        <span class="section-tag">Publications</span>
-        <h2 class="section-title">论文成果</h2>
-        <p class="section-subtitle">* 表示通讯作者</p>
+        <h2 class="section-title">简介</h2>
+      </div>
+      <div class="bio-text reveal">
+        <!-- ★ 修改为你的自我介绍 -->
+        <p>
+          我目前就读于 [你的大学] 计算机科学与技术专业，GPA [XX/100]，专业排名 Top X%。
+          研究方向包括机器学习、自然语言处理和计算机视觉。目前已发表学术论文 X 篇，
+          其中以第一作者身份在 [顶级会议/期刊] 发表论文 X 篇。
+        </p>
+        <p>
+          本科期间，我参与了 [X] 项科研项目，涉及情感分析、图像识别和知识图谱等领域。
+          曾获国家奖学金、[竞赛名称] 全国一等奖等荣誉。
+          希望能在 2026 年秋季进入硕士或博士项目继续深造，在人工智能领域做出有影响力的研究。
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 论文 ===== -->
+    <section class="section" id="publications">
+      <div class="section-header reveal">
+        <h2 class="section-title">论文</h2>
+        <span class="section-subtitle">* 通讯作者</span>
       </div>
 
       <div class="pub-list">
-        <!-- ★ 按时间倒序添加你的论文 -->
+        <!-- ★ 按时间倒序添加论文 -->
+
         <div class="pub-item reveal">
-          <span class="pub-year">2025</span>
+          <span class="pub-number">[1]</span>
           <div class="pub-content">
-            <h4>[论文标题]：基于 [方法] 的 [问题] 研究</h4>
-            <p class="pub-authors"><strong>L. Li</strong>（李子林），[Co-author 1]，[Co-author 2]，[Supervisor]*</p>
+            <h4>[论文标题]：关于 [问题] 的 [方法] 研究</h4>
+            <p class="pub-authors"><strong>L. Li</strong>（李子林），[Co-author]，[Supervisor]*</p>
             <p class="pub-venue"><em>[会议/期刊名称]</em>，2025. <span class="pub-badge">CCF-A</span></p>
+            <div class="pub-links">
+              <a href="#">[PDF]</a>
+              <a href="#">[DOI]</a>
+              <a href="#">[Code]</a>
+            </div>
           </div>
         </div>
 
         <div class="pub-item reveal">
-          <span class="pub-year">2024</span>
+          <span class="pub-number">[2]</span>
           <div class="pub-content">
-            <h4>[论文标题]：一种面向 [领域] 的 [方法] 研究</h4>
+            <h4>[论文标题]：一种面向 [领域] 的 [方法]</h4>
             <p class="pub-authors"><strong>L. Li</strong>（李子林），[Supervisor]*</p>
             <p class="pub-venue"><em>[会议/期刊名称]</em>，2024. <span class="pub-badge">CCF-B</span></p>
+            <div class="pub-links">
+              <a href="#">[PDF]</a>
+              <a href="#">[DOI]</a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ==============================
-       Research 研究项目
-       ============================== -->
-  <section class="section" id="research">
-    <div class="container">
+      </div>
+    </section>
+
+    <!-- ===== 研究 ===== -->
+    <section class="section" id="research">
       <div class="section-header reveal">
-        <span class="section-tag">Research</span>
         <h2 class="section-title">研究经历</h2>
       </div>
 
-      <div class="project-grid">
-        <!-- ★ 修改为你的研究项目 -->
-        <div class="project-card reveal">
-          <h3>📖 [项目名称]</h3>
-          <p class="project-desc">
-            使用 [方法/模型] 解决 [问题]，在 [数据集] 上达到 [效果/指标]。
-            主要负责：模型设计、实验与论文撰写。
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">PyTorch</span>
-            <span class="project-tag">BERT</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <h3>🔬 [项目名称]</h3>
-          <p class="project-desc">
-            针对 [问题] 提出 [方法]，相比 baseline 提升 [X]%。
-            已投稿至 [会议/期刊]。
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">TensorFlow</span>
-            <span class="project-tag">GCN</span>
-          </div>
+      <!-- ★ 修改研究项目 -->
+      <div class="research-item reveal">
+        <h3>基于深度学习的文本情感分析</h3>
+        <p class="research-desc">
+          使用 BERT 和 Bi-LSTM 构建情感分析模型，在中文评论数据集上达到 92.3% 的准确率。
+          负责模型设计与实验。相关论文发表于 [会议名称]。
+        </p>
+        <div class="research-tags">
+          <span class="research-tag">PyTorch</span>
+          <span class="research-tag">BERT</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ==============================
-       Honors / Awards 荣誉
-       ============================== -->
-  <section class="section" id="honors">
-    <div class="container">
+      <div class="research-item reveal">
+        <h3>轻量化图像分类网络</h3>
+        <p class="research-desc">
+          基于 MobileNetV3 架构进行改进，在保持精度的前提下将参数量减少 40%。
+          项目已开源，获得 [X] 星。
+        </p>
+        <div class="research-tags">
+          <span class="research-tag">TensorFlow</span>
+          <span class="research-tag">模型压缩</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== 荣誉 ===== -->
+    <section class="section" id="honors">
       <div class="section-header reveal">
-        <span class="section-tag">Honors</span>
-        <h2 class="section-title">荣誉与获奖</h2>
+        <h2 class="section-title">荣誉</h2>
       </div>
 
-      <div class="pub-list">
+      <div class="honors-list">
         <!-- ★ 修改为你的荣誉 -->
-        <div class="pub-item reveal">
-          <span class="pub-year">2025</span>
-          <div class="pub-content">
+        <div class="honor-item reveal">
+          <span class="honor-year">2025</span>
+          <div class="honor-info">
             <h4>国家奖学金</h4>
-            <p class="pub-venue">教育部</p>
+            <span class="honor-org">教育部</span>
           </div>
         </div>
-        <div class="pub-item reveal">
-          <span class="pub-year">2024</span>
-          <div class="pub-content">
+        <div class="honor-item reveal">
+          <span class="honor-year">2024</span>
+          <div class="honor-info">
             <h4>[竞赛名称] 全国一等奖</h4>
-            <p class="pub-venue">[主办单位]</p>
+            <span class="honor-org">[主办单位]</span>
           </div>
         </div>
-        <div class="pub-item reveal">
-          <span class="pub-year">2023-2024</span>
-          <div class="pub-content">
-            <h4>校级优秀学生</h4>
-            <p class="pub-venue">[你的大学]</p>
+        <div class="honor-item reveal">
+          <span class="honor-year">2023-2024</span>
+          <div class="honor-info">
+            <h4>校级优秀学生标兵</h4>
+            <span class="honor-org">[你的大学]</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==============================
-       Footer
-       ============================== -->
+  </main>
+
+  <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="container">
-      <p class="footer-text">© <span id="currentYear"></span> 李子林 · 个人学术主页</p>
+      <p class="footer-text">© <span id="currentYear"></span> 李子林</p>
       <div class="footer-links">
-        <a href="https://github.com/zlven" target="_blank" rel="noopener" title="GitHub">🐙</a>
+        <a href="https://github.com/zlven" target="_blank" title="GitHub">🐙</a>
         <a href="mailto:your.email@example.com" title="Email">✉️</a>
       </div>
     </div>
