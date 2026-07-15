@@ -3,83 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="李子林 - 个人学术主页 | 求学申请 | 计算机科学">
-  <meta name="author" content="李子林">
-
-  <!-- ===== 可替换信息 ===== -->
-  <title>李子林 | 个人学术主页</title>
-
-  <!-- 字体 -->
+  <meta name="description" content="李子林 - 学术主页 | 科研成果 | 求学申请">
+  <title>李子林 | 学术主页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- 样式 -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- ==============================
-       导航栏
+       导航
        ============================== -->
   <nav class="navbar">
     <div class="container">
-      <a href="#hero" class="nav-logo">LZ<span>.</span></a>
-
+      <a href="#" class="nav-logo">LZ<span>.</span></a>
       <div class="nav-links" id="navLinks">
-        <a href="#about">关于我</a>
-        <a href="#education">教育背景</a>
-        <a href="#research">研究项目</a>
-        <a href="#publications">发表</a>
-        <a href="#skills">技能</a>
-        <a href="#contact">联系方式</a>
+        <a href="#publications">论文</a>
+        <a href="#research">研究</a>
+        <a href="#honors">荣誉</a>
       </div>
-
       <button class="nav-toggle" id="navToggle" aria-label="切换菜单">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <!-- ==============================
-       Hero 首页横幅
+       Hero / 个人信息
        ============================== -->
-  <section class="hero" id="hero">
+  <section class="hero">
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">
           <span class="dot"></span>
-          开放求学机会
+          寻求 2026 年硕/博入学机会
         </div>
 
-        <!-- ★ 修改为你的姓名和简介 -->
-        <h1>你好，我是 <span class="highlight">李子林</span></h1>
-        <p class="hero-subtitle">计算机科学 · 本科在读</p>
+        <!-- ★ 修改个人信息 -->
+        <h1>李子林</h1>
+        <p class="hero-subtitle">[你的大学] · 计算机科学与技术 本科</p>
 
         <p class="hero-description">
-          热衷于算法设计、机器学习与系统开发。正在寻求 <strong>2026 年秋季</strong>
-          硕士 / 博士入学机会，希望在国际化的学术环境中进一步探索人工智能的前沿方向。
+          研究方向：机器学习、自然语言处理、计算机视觉。GPA [XX/100]，专业排名 Top X%。
+          共发表学术论文 X 篇（含 [顶级会议/期刊] X 篇），获 [竞赛/奖项] X 项。
+          希望在国际化的学术环境中进一步探索人工智能前沿。
         </p>
 
+        <!-- ★ 联系方式直接放在这里 -->
+        <div class="hero-contact">
+          <span>✉️ your.email@example.com</span>
+          <span>🐙 <a href="https://github.com/zlven" target="_blank">github.com/zlven</a></span>
+          <span>📍 中国 · [城市]</span>
+        </div>
+
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">
-            📧 联系我
-          </a>
-          <a href="#research" class="btn btn-outline">
-            📂 查看项目
-          </a>
-          <!-- ★ 替换为你的简历文件 -->
-          <a href="#" class="btn btn-outline" download>
-            📄 下载简历
-          </a>
+          <!-- ★ 替换为你的简历 PDF -->
+          <a href="#" class="btn btn-primary" download>📄 下载简历</a>
+          <a href="mailto:your.email@example.com" class="btn btn-outline">✉️ 联系我</a>
         </div>
       </div>
 
       <div class="hero-image">
         <div class="hero-avatar">
-          <!-- ★ 替换为你自己的头像照片或保留字母缩写 -->
           <span class="avatar-text">LZL</span>
         </div>
       </div>
@@ -87,224 +73,33 @@
   </section>
 
   <!-- ==============================
-       About 关于我
-       ============================== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">About</span>
-        <h2 class="section-title">关于我</h2>
-        <p class="section-subtitle">了解我的学术背景与研究兴趣</p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <!-- ★ 修改为你的自我介绍 -->
-          <h3>一名充满热情的计算机科学学生</h3>
-          <p>
-            我目前就读于 [你的大学] 计算机科学与技术专业，GPA [你的 GPA/100]，
-            专业排名前 [X]%。我的研究兴趣主要集中在 <strong>机器学习、自然语言处理</strong>
-            和 <strong>计算机视觉</strong> 等领域。
-          </p>
-          <p>
-            在校期间，我参与了多个科研项目，积累了扎实的编程能力和算法基础。
-            我热衷于将理论转化为实践，并在国际学术交流中不断提升自己的研究水平。
-          </p>
-          <p>
-            我希望通过进一步深造，在人工智能领域做出有影响力的研究成果，
-            并最终成为一名能够解决实际问题的优秀研究者。
-          </p>
-
-          <div class="about-info">
-            <div class="info-item">
-              <span class="label">姓名</span>
-              <span class="value">李子林</span>
-            </div>
-            <div class="info-item">
-              <span class="label">学校</span>
-              <span class="value">[你的大学]</span>
-            </div>
-            <div class="info-item">
-              <span class="label">专业</span>
-              <span class="value">计算机科学与技术</span>
-            </div>
-            <div class="info-item">
-              <span class="label">学历</span>
-              <span class="value">本科 [年级]</span>
-            </div>
-            <div class="info-item">
-              <span class="label">邮箱</span>
-              <span class="value">your.email@example.com</span>
-            </div>
-            <div class="info-item">
-              <span class="label">兴趣</span>
-              <span class="value">ML / NLP / CV</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- ★ 修改 stats 数据为你自己的 -->
-        <div class="about-stats reveal">
-          <div class="stat-card">
-            <div class="stat-number">3+</div>
-            <div class="stat-label">科研项目</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">2</div>
-            <div class="stat-label">学术论文</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">3</div>
-            <div class="stat-label">竞赛获奖</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       Education 教育背景
-       ============================== -->
-  <section class="section" id="education">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Education</span>
-        <h2 class="section-title">教育背景</h2>
-        <p class="section-subtitle">我的求学经历</p>
-      </div>
-
-      <div class="timeline">
-        <!-- ★ 修改为你的教育经历，按时间倒序排列 -->
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2023 — 至今</span>
-            <h3>[你的大学]</h3>
-            <p class="institution">计算机科学与技术 · 本科</p>
-            <p>
-              GPA: [XX/100] · 专业排名: Top X%<br>
-              主修课程: 数据结构与算法、机器学习、深度学习、计算机视觉、
-              自然语言处理、数据库系统
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2020 — 2023</span>
-            <h3>[你的高中]</h3>
-            <p class="institution">理科方向</p>
-            <p>
-              高考成绩: [XX/750] · 理科综合: [XX/300]<br>
-              曾获 [竞赛名称] 奖项
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       Research / Projects 研究项目
-       ============================== -->
-  <section class="section" id="research">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Research</span>
-        <h2 class="section-title">研究项目</h2>
-        <p class="section-subtitle">科研与实践项目经历</p>
-      </div>
-
-      <div class="project-grid">
-        <!-- ★ 修改为你的项目经历，每个 card 一个项目 -->
-
-        <div class="project-card reveal">
-          <div class="project-icon">🤖</div>
-          <h3>基于深度学习的文本情感分析系统</h3>
-          <p>
-            使用 BERT 和 LSTM 构建情感分析模型，在中文评论数据集上达到 92.3% 的准确率。
-            实现了完整的 Web 演示系统。
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">PyTorch</span>
-            <span class="project-tag">BERT</span>
-            <span class="project-tag">Flask</span>
-          </div>
-          <div class="project-links">
-            <a href="#">GitHub →</a>
-            <a href="#">论文 →</a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-icon">📷</div>
-          <h3>轻量化图像分类网络设计</h3>
-          <p>
-            基于 MobileNet 架构改进，设计了一种适用于移动端的实时图像分类模型，
-            在保持精度的同时将参数量减少 40%。
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">TensorFlow</span>
-            <span class="project-tag">MobileNet</span>
-            <span class="project-tag">量化</span>
-          </div>
-          <div class="project-links">
-            <a href="#">GitHub →</a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-icon">📊</div>
-          <h3>知识图谱辅助的推荐系统</h3>
-          <p>
-            将知识图谱嵌入引入协同过滤推荐，缓解冷启动和数据稀疏问题，
-            在 MovieLens 数据集上 Recall@20 提升 15%。
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">Neo4j</span>
-            <span class="project-tag">GCN</span>
-          </div>
-          <div class="project-links">
-            <a href="#">GitHub →</a>
-            <a href="#">报告 →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       Publications 发表
+       Publications 论文
        ============================== -->
   <section class="section" id="publications">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">Publications</span>
-        <h2 class="section-title">论文发表</h2>
-        <p class="section-subtitle">学术成果</p>
+        <h2 class="section-title">论文成果</h2>
+        <p class="section-subtitle">* 表示通讯作者</p>
       </div>
 
       <div class="pub-list">
-        <!-- ★ 修改为你的论文列表，按时间倒序 -->
-
+        <!-- ★ 按时间倒序添加你的论文 -->
         <div class="pub-item reveal">
           <span class="pub-year">2025</span>
           <div class="pub-content">
             <h4>[论文标题]：基于 [方法] 的 [问题] 研究</h4>
-            <p class="pub-authors"><strong>李子林</strong>，[合作者 1]，[合作者 2]</p>
-            <p class="pub-venue">[会议/期刊名称]，2025</p>
+            <p class="pub-authors"><strong>L. Li</strong>（李子林），[Co-author 1]，[Co-author 2]，[Supervisor]*</p>
+            <p class="pub-venue"><em>[会议/期刊名称]</em>，2025. <span class="pub-badge">CCF-A</span></p>
           </div>
         </div>
 
         <div class="pub-item reveal">
           <span class="pub-year">2024</span>
           <div class="pub-content">
-            <h4>[论文标题]：关于 [主题] 的 [方法]</h4>
-            <p class="pub-authors"><strong>李子林</strong>，[导师姓名]</p>
-            <p class="pub-venue">[会议/期刊名称]，2024</p>
+            <h4>[论文标题]：一种面向 [领域] 的 [方法] 研究</h4>
+            <p class="pub-authors"><strong>L. Li</strong>（李子林），[Supervisor]*</p>
+            <p class="pub-venue"><em>[会议/期刊名称]</em>，2024. <span class="pub-badge">CCF-B</span></p>
           </div>
         </div>
       </div>
@@ -312,208 +107,94 @@
   </section>
 
   <!-- ==============================
-       Skills 技能
+       Research 研究项目
        ============================== -->
-  <section class="section" id="skills">
+  <section class="section" id="research">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Skills</span>
-        <h2 class="section-title">技能与工具</h2>
-        <p class="section-subtitle">技术栈与专业能力</p>
+        <span class="section-tag">Research</span>
+        <h2 class="section-title">研究经历</h2>
       </div>
 
-      <div class="skills-content">
-        <div>
-          <!-- ★ 修改技能标签 -->
-          <div class="skills-category reveal">
-            <h3>💻 编程语言</h3>
-            <div class="skills-list">
-              <span class="skill-item">Python</span>
-              <span class="skill-item">C / C++</span>
-              <span class="skill-item">Java</span>
-              <span class="skill-item">JavaScript</span>
-              <span class="skill-item">SQL</span>
-            </div>
-          </div>
-
-          <div class="skills-category reveal">
-            <h3>🧠 框架与工具</h3>
-            <div class="skills-list">
-              <span class="skill-item">PyTorch</span>
-              <span class="skill-item">TensorFlow</span>
-              <span class="skill-item">Scikit-learn</span>
-              <span class="skill-item">Hugging Face</span>
-              <span class="skill-item">OpenCV</span>
-              <span class="skill-item">Flask</span>
-              <span class="skill-item">Git</span>
-              <span class="skill-item">Docker</span>
-            </div>
-          </div>
-
-          <div class="skills-category reveal">
-            <h3>🌐 语言能力</h3>
-            <div class="skills-list">
-              <span class="skill-item">🇨🇳 中文 (母语)</span>
-              <span class="skill-item">🇬🇧 英语 (IELTS X.X)</span>
-              <span class="skill-item">🇯🇵 日语 (基础)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills-chart reveal">
-          <!-- ★ 修改百分比为你自己的水平 -->
-          <div class="skill-bar-group">
-            <div class="skill-bar-label">
-              <span>Python</span>
-              <span>90%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-width="90%"></div>
-            </div>
-          </div>
-
-          <div class="skill-bar-group">
-            <div class="skill-bar-label">
-              <span>机器学习 / 深度学习</span>
-              <span>85%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-width="85%"></div>
-            </div>
-          </div>
-
-          <div class="skill-bar-group">
-            <div class="skill-bar-label">
-              <span>C / C++</span>
-              <span>75%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-width="75%"></div>
-            </div>
-          </div>
-
-          <div class="skill-bar-group">
-            <div class="skill-bar-label">
-              <span>数据结构与算法</span>
-              <span>88%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-width="88%"></div>
-            </div>
-          </div>
-
-          <div class="skill-bar-group">
-            <div class="skill-bar-label">
-              <span>学术英语</span>
-              <span>80%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-width="80%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       Contact 联系方式
-       ============================== -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Contact</span>
-        <h2 class="section-title">联系方式</h2>
-        <p class="section-subtitle">期待与你的交流</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <h3>保持联系</h3>
-          <p>
-            如果你对我的研究感兴趣，或者有硕士 / 博士招生的机会，
-            非常欢迎通过以下方式与我联系。我通常会在 24 小时内回复。
+      <div class="project-grid">
+        <!-- ★ 修改为你的研究项目 -->
+        <div class="project-card reveal">
+          <h3>📖 [项目名称]</h3>
+          <p class="project-desc">
+            使用 [方法/模型] 解决 [问题]，在 [数据集] 上达到 [效果/指标]。
+            主要负责：模型设计、实验与论文撰写。
           </p>
-
-          <div class="contact-methods">
-            <!-- ★ 修改为你的真实联系方式 -->
-
-            <div class="contact-method">
-              <div class="contact-method-icon">✉️</div>
-              <div class="contact-method-text">
-                <span class="method-label">邮箱</span>
-                <span class="method-value">your.email@example.com</span>
-              </div>
-            </div>
-
-            <div class="contact-method">
-              <div class="contact-method-icon">📍</div>
-              <div class="contact-method-text">
-                <span class="method-label">所在城市</span>
-                <span class="method-value">中国 · [城市]</span>
-              </div>
-            </div>
-
-            <div class="contact-method">
-              <div class="contact-method-icon">🐙</div>
-              <div class="contact-method-text">
-                <span class="method-label">GitHub</span>
-                <span class="method-value">github.com/zlven</span>
-              </div>
-            </div>
+          <div class="project-tags">
+            <span class="project-tag">PyTorch</span>
+            <span class="project-tag">BERT</span>
           </div>
         </div>
 
-        <form class="contact-form reveal" id="contactForm">
-          <!-- ★ 替换 action 为你的 Formspree ID 或删除 action 使用默认处理 -->
-          <!-- <form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST"> -->
-
-          <div class="form-group">
-            <label class="form-label" for="name">姓名</label>
-            <input class="form-input" type="text" id="name" name="name" placeholder="你的姓名" required>
+        <div class="project-card reveal">
+          <h3>🔬 [项目名称]</h3>
+          <p class="project-desc">
+            针对 [问题] 提出 [方法]，相比 baseline 提升 [X]%。
+            已投稿至 [会议/期刊]。
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">GCN</span>
           </div>
-
-          <div class="form-group">
-            <label class="form-label" for="email">邮箱</label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="subject">主题</label>
-            <input class="form-input" type="text" id="subject" name="subject" placeholder="如：硕士招生机会">
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="message">留言</label>
-            <textarea class="form-textarea" id="message" name="message" placeholder="请写下你想对我说的话..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-            📤 发送留言
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ==============================
-       Footer 页脚
+       Honors / Awards 荣誉
+       ============================== -->
+  <section class="section" id="honors">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Honors</span>
+        <h2 class="section-title">荣誉与获奖</h2>
+      </div>
+
+      <div class="pub-list">
+        <!-- ★ 修改为你的荣誉 -->
+        <div class="pub-item reveal">
+          <span class="pub-year">2025</span>
+          <div class="pub-content">
+            <h4>国家奖学金</h4>
+            <p class="pub-venue">教育部</p>
+          </div>
+        </div>
+        <div class="pub-item reveal">
+          <span class="pub-year">2024</span>
+          <div class="pub-content">
+            <h4>[竞赛名称] 全国一等奖</h4>
+            <p class="pub-venue">[主办单位]</p>
+          </div>
+        </div>
+        <div class="pub-item reveal">
+          <span class="pub-year">2023-2024</span>
+          <div class="pub-content">
+            <h4>校级优秀学生</h4>
+            <p class="pub-venue">[你的大学]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       Footer
        ============================== -->
   <footer class="footer">
     <div class="container">
-      <p class="footer-text">
-        © <span id="currentYear"></span> 李子林 · 使用 ❤️ 构建
-      </p>
+      <p class="footer-text">© <span id="currentYear"></span> 李子林 · 个人学术主页</p>
       <div class="footer-links">
-        <!-- ★ 修改为你的社交链接 -->
         <a href="https://github.com/zlven" target="_blank" rel="noopener" title="GitHub">🐙</a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" title="LinkedIn">🔗</a>
         <a href="mailto:your.email@example.com" title="Email">✉️</a>
       </div>
     </div>
   </footer>
 
-  <!-- JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>
