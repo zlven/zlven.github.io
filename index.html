@@ -68,8 +68,9 @@
           我热衷于探索生成式人工智能的前沿方向，并致力于将理论成果转化为开源实践。
         </p>
         <p>
-          在 GitHub 上维护了离散扩散模型的开源项目 <strong>sedd</strong>，
-          旨在提供高效、清晰的扩散模型实现。未来希望能在生成模型领域继续深造，
+          在 GitHub 上维护了离散扩散模型与 RLHF 结合的开源项目
+          <strong><a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a></strong>，
+          旨在用扩散模型生成高质量 LaTeX 数学公式。未来希望能在生成模型领域继续深造，
           攻读硕士或博士学位，做出有影响力的研究工作。
         </p>
       </div>
@@ -113,22 +114,25 @@
 
       <div class="research-item reveal">
         <h3>
-          <a href="https://github.com/zlven/sedd" target="_blank">sedd</a>
+          <a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a>
           <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 8px;">
-            ⭐ [X] · 扩散模型
+            · 离散扩散模型 + RLHF 生成 LaTeX 数学公式
           </span>
         </h3>
         <p class="research-desc">
-          离散扩散模型（Score Entropy Discrete Diffusion）的开源实现。
-          项目聚焦于将扩散模型应用于离散数据（如文本）的生成任务，
-          提供了完整的训练、采样和评估流程。主要包括模型架构实现、
-          训练代码以及预训练模型权重。
+          将离散扩散模型（SEDD）与强化学习（PPO）结合，通过 RLHF 对齐
+          生成高质量 LaTeX 数学公式。项目实现了完整的 SFT → RLHF 流程，
+          包括基于 S1K-1.1 数据集的监督微调、自定义多维奖励函数
+          （语法正确性、数学内容质量、探索奖励等），以及基于 PPO 的对齐训练。
+          针对 GPT-2 大词表场景做了稀疏优化，单卡 GPU 即可训练。
         </p>
         <div class="research-tags">
           <span class="research-tag">PyTorch</span>
+          <span class="research-tag">SEDD</span>
+          <span class="research-tag">PPO</span>
+          <span class="research-tag">RLHF</span>
+          <span class="research-tag">LaTeX</span>
           <span class="research-tag">Diffusion Models</span>
-          <span class="research-tag">Discrete Data</span>
-          <span class="research-tag">Text Generation</span>
         </div>
       </div>
 

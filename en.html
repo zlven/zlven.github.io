@@ -69,10 +69,11 @@
           particular focus on discrete diffusion models for text generation.
         </p>
         <p>
-          I maintain the open-source project <strong>sedd</strong> on GitHub,
-          an implementation of discrete diffusion models aimed at providing efficient
-          and well-documented code for the research community. I am seeking a Ph.D. or
-          Master's position to further pursue impactful research in generative AI.
+          I maintain the open-source project
+          <strong><a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a></strong>
+          on GitHub, which aligns discrete diffusion models with RLHF for generating
+          high-quality LaTeX formulas. I am seeking a Ph.D. or Master's position to
+          further pursue impactful research in generative AI.
         </p>
       </div>
     </section>
@@ -115,22 +116,26 @@
 
       <div class="research-item reveal">
         <h3>
-          <a href="https://github.com/zlven/sedd" target="_blank">sedd</a>
+          <a href="https://github.com/zlven/SEDD-LaTeX-RLHF" target="_blank">SEDD-LaTeX-RLHF</a>
           <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 8px;">
-            ⭐ [X] · Discrete Diffusion
+            · Discrete Diffusion + RLHF for LaTeX Generation
           </span>
         </h3>
         <p class="research-desc">
-          An open-source implementation of Score Entropy Discrete Diffusion (SEDD) models.
-          This project focuses on applying diffusion models to discrete data such as text,
-          providing a complete pipeline for training, sampling, and evaluation.
-          Includes model architecture, training scripts, and pretrained weights.
+          Aligns a discrete diffusion model (SEDD) with RLHF via PPO to generate
+          high-quality LaTeX mathematical formulas. Implements a complete SFT → RLHF
+          pipeline, including supervised fine-tuning on the S1K-1.1 math dataset,
+          custom multi-dimensional reward functions (syntax correctness, math quality,
+          exploration bonus), and PPO-based alignment training. Features sparse
+          optimizations for the GPT-2 large-vocabulary setting, enabling single-GPU training.
         </p>
         <div class="research-tags">
           <span class="research-tag">PyTorch</span>
+          <span class="research-tag">SEDD</span>
+          <span class="research-tag">PPO</span>
+          <span class="research-tag">RLHF</span>
+          <span class="research-tag">LaTeX</span>
           <span class="research-tag">Diffusion Models</span>
-          <span class="research-tag">Discrete Data</span>
-          <span class="research-tag">Text Generation</span>
         </div>
       </div>
 
