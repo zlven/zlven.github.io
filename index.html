@@ -80,7 +80,7 @@
     <section class="section" id="publications">
       <div class="section-header reveal">
         <h2 class="section-title">论文</h2>
-        <span class="section-subtitle">* 通讯作者</span>
+        <span class="section-subtitle">* 共同第一作者</span>
       </div>
 
       <div class="pub-list">
@@ -89,7 +89,7 @@
           <span class="pub-number">[1]</span>
           <div class="pub-content">
             <h4>ExProp: Exponential Propagation on Implicit Manifolds for Training-Free DiT Acceleration</h4>
-            <p class="pub-authors"><strong>Lizilin</strong>, Jinlong Yang, Jinke Wu, Yao Zhou*</p>
+            <p class="pub-authors"><strong>Lizilin</strong>, Jinlong Yang, Jinke Wu, Yao Zhou</p>
             <p class="pub-summary">面向现有特征预测方法仅按欧氏空间轨迹外推、忽视扩散轨迹隐流形结构的问题，提出无需训练的 ExProp 加速方法：将特征预测重构为隐流形上的局部指数传播，通过局部信任域机制约束几何有效邻域，在 Flux.1-dev、DiT-XL/2 与 HunyuanVideo 等主流模型上优于现有特征缓存与预测方法。</p>
             <p class="pub-venue"><em>AAAI 2027</em> · 在投 <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
@@ -99,7 +99,7 @@
           <span class="pub-number">[2]</span>
           <div class="pub-content">
             <h4>HDS: Heterogeneity-Driven Safeguarding for Accelerating Diffusion Transformers</h4>
-            <p class="pub-authors"><strong>Lizilin</strong>, Jinlong Yang, Jinke Wu, Yao Zhou*</p>
+            <p class="pub-authors"><strong>Lizilin</strong>, Jinlong Yang, Jinke Wu, Yao Zhou</p>
             <p class="pub-summary">面向现有预测加速方法忽略误差影响跨层异质性、难以兼顾质量与效率的问题，提出无需训练的 HDS 加速框架：基于预测误差影响具有时间稳定层间异质性的发现，设计异质性分数（HS）在线评估各层风险，对脆弱层保留完整计算、对稳健层激进加速，在多种 DiT 架构与预测方案上以可忽略开销提升质量–效率帕累托前沿。</p>
             <p class="pub-venue"><em>NeurIPS 2026</em> · 在投 <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
@@ -109,7 +109,7 @@
           <span class="pub-number">[3]</span>
           <div class="pub-content">
             <h4>FADE: Fractional Anomalous Dynamics Extrapolation for Training-Free Diffusion Transformers Acceleration</h4>
-            <p class="pub-authors">Jinlong Yang, <strong>Lizilin</strong>, Jinke Wu, Yao Zhou*</p>
+            <p class="pub-authors">Jinlong Yang, <strong>Lizilin</strong>, Jinke Wu, Yao Zhou</p>
             <p class="pub-summary">面向扩散 Transformer 潜在轨迹非平稳、高曲率导致整数阶预测算子误差累积的问题，提出无需训练的 FADE 加速框架：以反常扩散刻画特征演化，采用 Mittag–Leffler 分数阶算子适配高曲率非线性轨迹，并通过离线多维建模实现推理期近零开销的自适应参数检索，在多种架构与模态上实现领先的加速与保真度权衡。</p>
             <p class="pub-venue"><em>NeurIPS 2026</em> · 在投 <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
@@ -119,7 +119,7 @@
           <span class="pub-number">[4]</span>
           <div class="pub-content">
             <h4>BRACE: Taming Sharp Irregularities via Barycentric Rational Forecasting for Fast Diffusion Transformers Inference</h4>
-            <p class="pub-authors">Jinlong Yang, Jinke Wu, <strong>Lizilin</strong>, Yao Zhou*</p>
+            <p class="pub-authors">Jinlong Yang*, Jinke Wu*, <strong>Lizilin</strong>, Yao Zhou</p>
             <p class="pub-summary">面向扩散 Transformer 推理开销大、现有长步长预测稳定性不足的问题，提出无需训练的 BRACE 加速框架：通过局部滑动窗口、重心有理外推与自适应 Chebyshev 权重实现中间特征稳定预测，在 DiT-XL/2、FLUX.1-dev 与 HunyuanVideo 上均取得优于现有方法的质量–效率权衡。</p>
             <p class="pub-venue"><em>ACM Multimedia (MM) 2026</em> · 已接收 <span class="pub-badge ok">CCF-A</span></p>
             <div class="pub-links">
@@ -133,7 +133,7 @@
           <span class="pub-number">[5]</span>
           <div class="pub-content">
             <h4>LaBACK: From Feature Forecasting to Trajectory-Drift Control for Efficient Flow Matching Sampling</h4>
-            <p class="pub-authors">Jinlong Yang, <strong>Lizilin</strong>, Jinke Wu, Yao Zhou*</p>
+            <p class="pub-authors">Jinlong Yang, <strong>Lizilin</strong>, Jinke Wu, Yao Zhou</p>
             <p class="pub-summary">面向流匹配采样中缓存引入的速度误差沿轨迹传播造成生成漂移的问题，提出无需训练的 LaBACK 加速方法：以 Laurent 级数引导的特征预测降低近似误差，并引入确定性回溯抑制误差沿采样轨迹传播，在文生图、蒸馏文生图与文生视频任务上取得更优的速度–质量权衡。</p>
             <p class="pub-venue"><em>AAAI 2027</em> · 在投 <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
@@ -143,7 +143,7 @@
           <span class="pub-number">[6]</span>
           <div class="pub-content">
             <h4>GRAD-RIR: Topology-Aware Graph-Conditioned Diffusion Model for Sparse RIR Prediction</h4>
-            <p class="pub-authors">Jinke Wu, Jinlong Yang, <strong>Lizilin</strong>, Wei Ju, Zhenning Ba, Mengtao Wu</p>
+            <p class="pub-authors">Jinke Wu*, Jinlong Yang*, <strong>Lizilin</strong>, Wei Ju, Zhenning Ba, Mengtao Wu</p>
             <p class="pub-summary">面向稀疏观测下的真实房间脉冲响应估计：以声源、已测锚点与查询位置构建异构空间图，每个节点由局部视觉–几何特征锚定，显式建模复杂房间拓扑与遮挡关系；双阶段解码器分别确定性预测早期反射、条件扩散生成晚期混响拖尾，在多个稀疏度基准上对未见环境保持强泛化。</p>
             <p class="pub-venue"><em>AAAI 2027</em> · 在投 <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
