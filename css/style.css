@@ -280,6 +280,28 @@ a:hover { color: var(--primary); text-decoration: underline; }
   border-radius: 3px;
   margin-left: 4px;
 }
+.pub-badge.ok {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* 会议名突出显示 */
+.pub-venue em {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+/* 论文摘要 */
+.pub-summary {
+  margin: 6px 0 4px;
+  padding-left: 12px;
+  border-left: 2px solid var(--border);
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
 
 .pub-links { margin-top: 4px; display: flex; gap: 12px; }
 .pub-links a {

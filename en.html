@@ -35,8 +35,8 @@
     <div class="container">
       <div>
         <h1 class="hero-name">Zilin Li</h1>
-        <p class="hero-degree">B.S. in Software Engineering (2023–), Sichuan University</p>
-        <p class="hero-affiliation">Sichuan University, Chengdu, China ｜ From Taiwan, China</p>
+        <p class="hero-degree">B.S. in Software Engineering (2023–) · Sichuan University</p>
+        <p class="hero-affiliation">Chengdu, China ｜ From Taiwan, China</p>
         <p class="hero-interests">
           <strong>Research Interests:</strong> Efficient Diffusion Inference · DiT Acceleration · AIGC
         </p>
@@ -101,7 +101,8 @@
           <div class="pub-content">
             <h4>ExProp: Exponential Propagation on Implicit Manifolds for Training-Free DiT Acceleration</h4>
             <p class="pub-authors"><strong>Zilin Li</strong>, Jinlong Yang, Jinke Wu, Yao Zhou*</p>
-            <p class="pub-venue"><em>AAAI 2027</em> Under Review. <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
+            <p class="pub-summary">Existing feature-prediction methods extrapolate along Euclidean trajectories and ignore the implicit-manifold structure of diffusion trajectories. ExProp reformulates feature prediction as local exponential propagation on the implicit manifold and constrains the geometrically valid neighborhood via a local trust-region mechanism, outperforming existing feature-caching and prediction methods on Flux.1-dev, DiT-XL/2, and HunyuanVideo.</p>
+            <p class="pub-venue"><em>AAAI 2027</em> · Under Review <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
         </div>
 
@@ -110,7 +111,8 @@
           <div class="pub-content">
             <h4>HDS: Heterogeneity-Driven Safeguarding for Accelerating Diffusion Transformers</h4>
             <p class="pub-authors"><strong>Zilin Li</strong>, Jinlong Yang, Jinke Wu, Yao Zhou*</p>
-            <p class="pub-venue"><em>NeurIPS 2026</em> Under Review. <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
+            <p class="pub-summary">Existing prediction-based acceleration methods ignore the cross-layer heterogeneity of prediction-error impact and struggle to balance quality and efficiency. HDS is a training-free framework that, based on the discovery of temporally stable inter-layer heterogeneity, evaluates each layer&rsquo;s risk online with a heterogeneity score (HS): fragile layers keep full computation while robust layers are aggressively accelerated, advancing the quality&ndash;efficiency Pareto frontier across DiT architectures at negligible overhead.</p>
+            <p class="pub-venue"><em>NeurIPS 2026</em> · Under Review <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
         </div>
 
@@ -119,7 +121,8 @@
           <div class="pub-content">
             <h4>FADE: Fractional Anomalous Dynamics Extrapolation for Training-Free Diffusion Transformers Acceleration</h4>
             <p class="pub-authors">Jinlong Yang, <strong>Zilin Li</strong>, Jinke Wu, Yao Zhou*</p>
-            <p class="pub-venue"><em>NeurIPS 2026</em> Under Review. <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
+            <p class="pub-summary">Latent trajectories of diffusion Transformers are non-stationary with high curvature, causing error accumulation in integer-order prediction operators. FADE characterizes feature evolution as anomalous diffusion and adopts Mittag&ndash;Leffler fractional operators matched to high-curvature nonlinear trajectories, with near-zero-overhead adaptive parameter retrieval at inference via offline multi-dimensional modeling, delivering state-of-the-art speed&ndash;fidelity trade-offs across architectures and modalities.</p>
+            <p class="pub-venue"><em>NeurIPS 2026</em> · Under Review <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
             <div class="pub-links">
               <a href="https://anonymous.4open.science/status/FADE-8CB5" target="_blank">[Code]</a>
             </div>
@@ -131,7 +134,8 @@
           <div class="pub-content">
             <h4>BRACE: Taming Sharp Irregularities via Barycentric Rational Forecasting for Fast Diffusion Transformers Inference</h4>
             <p class="pub-authors">Jinlong Yang, Jinke Wu, <strong>Zilin Li</strong>, Yao Zhou*</p>
-            <p class="pub-venue"><em>ACM Multimedia (MM)</em>, 2026. <span class="pub-badge">CCF-A</span></p>
+            <p class="pub-summary">To address the high inference cost of diffusion Transformers and the instability of existing long-step prediction, BRACE proposes a training-free acceleration framework that stably predicts intermediate features via local sliding windows, barycentric rational extrapolation, and adaptive Chebyshev weights, achieving better quality&ndash;efficiency trade-offs than prior methods on DiT-XL/2, FLUX.1-dev, and HunyuanVideo.</p>
+            <p class="pub-venue"><em>ACM Multimedia (MM) 2026</em> · Accepted <span class="pub-badge ok">CCF-A</span></p>
           </div>
         </div>
 
@@ -140,7 +144,8 @@
           <div class="pub-content">
             <h4>LaBACK: From Feature Forecasting to Trajectory-Drift Control for Efficient Flow Matching Sampling</h4>
             <p class="pub-authors">Jinlong Yang, <strong>Zilin Li</strong>, Jinke Wu, Yao Zhou*</p>
-            <p class="pub-venue"><em>AAAI 2027</em> Under Review. <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
+            <p class="pub-summary">Cached features in flow-matching sampling introduce velocity errors that propagate along the sampling trajectory and cause generation drift. LaBACK is a training-free method that reduces approximation error via Laurent-series-guided feature prediction and suppresses error propagation with deterministic backtracking, achieving better speed&ndash;quality trade-offs on text-to-image, distilled text-to-image, and text-to-video tasks.</p>
+            <p class="pub-venue"><em>AAAI 2027</em> · Under Review <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
         </div>
 
