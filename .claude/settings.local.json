@@ -6,7 +6,18 @@
       "Bash(git remote *)",
       "Bash(git branch *)",
       "Bash(git push *)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git fetch *)",
+      "Bash(git rev-list *)",
+      "Bash(git ls-tree *)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(curl -s -o /dev/null -w \"homepage: %{http_code}\\\\n\" https://zlven.github.io/)",
+      "Bash(curl -s -o /dev/null -w \"with html: %{http_code}\\\\n\" https://zlven.github.io/index.html)",
+      "Bash(curl -s -o /dev/null -w \"repo raw: %{http_code}\\\\n\" https://raw.githubusercontent.com/zlven/zlven.github.io/main/index.html)",
+      "Bash(curl -s https://api.github.com/repos/zlven/zlven.github.io/pages)",
+      "Bash(python *)",
+      "Bash(git restore *)"
     ]
   }
 }
