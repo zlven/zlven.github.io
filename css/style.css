@@ -184,7 +184,8 @@ a:hover { color: var(--primary); text-decoration: underline; }
 
 .hero-avatar {
   width: 180px;
-  height: 180px;
+  aspect-ratio: 800 / 1142; /* 匹配 myself.jpg，避免裁切 */
+  height: auto;
   border-radius: 4px;
   object-fit: cover;
   border: 1px solid var(--border);
@@ -445,7 +446,7 @@ a:hover { color: var(--primary); text-decoration: underline; }
     gap: 24px;
   }
   .hero-image { order: -1; }
-  .hero-avatar { width: 120px; height: 120px; font-size: 2rem; }
+  .hero-avatar { width: 120px; height: auto; font-size: 2rem; }
   .hero-name { font-size: 1.8rem; }
 
   .nav-links {
