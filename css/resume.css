@@ -1,0 +1,187 @@
+/* ============================================
+   在线简历页 - Online Resume (A4 / 打印友好)
+   ============================================ */
+
+:root {
+  --cv-text: #1a202c;
+  --cv-muted: #4a5568;
+  --cv-light: #718096;
+  --cv-accent: #2b6cb0;
+  --cv-line: #cbd5e0;
+  --cv-bg: #f1f5f9;
+  --cv-sheet: #ffffff;
+  --font-sans: 'Inter', -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', 'Songti SC', 'SimSun', serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--cv-text);
+  background: var(--cv-bg);
+  font-size: 14px;
+  line-height: 1.65;
+  padding: 32px 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--cv-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- 顶部工具条(打印时隐藏) --- */
+.toolbar {
+  max-width: 800px;
+  margin: 0 auto 18px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.tb-btn {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 7px 16px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e0;
+  background: #fff;
+  color: var(--cv-text);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.tb-btn:hover {
+  border-color: var(--cv-accent);
+  color: var(--cv-accent);
+  text-decoration: none;
+}
+
+/* --- A4 纸张 --- */
+.sheet {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--cv-sheet);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  padding: 48px 52px;
+}
+
+/* --- 页眉 --- */
+.cv-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  border-bottom: 2px solid var(--cv-text);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+.cv-head h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.cv-contact {
+  font-size: 0.82rem;
+  color: var(--cv-muted);
+  margin-bottom: 4px;
+  word-break: break-all;
+}
+.cv-edu {
+  font-size: 0.92rem;
+  color: var(--cv-text);
+  font-weight: 500;
+}
+.cv-research {
+  font-size: 0.85rem;
+  color: var(--cv-light);
+  margin-top: 2px;
+}
+.cv-photo {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--cv-line);
+  flex-shrink: 0;
+}
+
+/* --- 章节 --- */
+section { margin-bottom: 18px; }
+section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--cv-text);
+  border-bottom: 1px solid var(--cv-line);
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* --- 论文/经历条目 --- */
+.entry { margin-bottom: 12px; page-break-inside: avoid; break-inside: avoid; }
+
+.entry-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.entry-meta {
+  font-size: 0.78rem;
+  color: var(--cv-light);
+  margin-top: 1px;
+}
+.entry-meta strong { color: var(--cv-accent); font-weight: 600; }
+.entry-meta em { color: var(--cv-text); font-style: normal; font-weight: 500; }
+.entry-desc {
+  font-size: 0.85rem;
+  color: var(--cv-muted);
+  margin-top: 3px;
+  padding-left: 12px;
+  border-left: 2px solid #e2e8f0;
+}
+.entry-desc b { color: var(--cv-text); }
+
+/* --- 实习 --- */
+.exp-org { font-weight: 600; font-size: 0.95rem; }
+.exp-line { font-size: 0.78rem; color: var(--cv-light); margin: 1px 0 4px; }
+
+/* --- 列表(荣誉 / 技能) --- */
+ul.cv-list { list-style: none; }
+ul.cv-list li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 0.9rem;
+  color: var(--cv-text);
+  margin-bottom: 3px;
+}
+ul.cv-list li::before {
+  content: "•";
+  position: absolute;
+  left: 2px;
+  color: var(--cv-accent);
+}
+ul.cv-list li .li-year {
+  display: inline-block;
+  min-width: 44px;
+  font-weight: 600;
+  color: var(--cv-accent);
+}
+ul.cv-list.skill li { color: var(--cv-muted); }
+ul.cv-list.skill li b { color: var(--cv-text); }
+
+/* --- 打印 --- */
+@page { size: A4; margin: 14mm 13mm; }
+
+@media print {
+  body { background: #fff; padding: 0; font-size: 12px; }
+  .toolbar { display: none; }
+  .sheet { box-shadow: none; max-width: none; padding: 0; }
+  section h2 { page-break-after: avoid; }
+  .entry, ul.cv-list li { page-break-inside: avoid; break-inside: avoid; }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="李子林 - 在线简历 | 四川大学 软件工程 | 扩散模型高效推理">
+  <title>李子林 · 在线简历</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/resume.css">
+</head>
+<body>
+
+  <div class="toolbar">
+    <a class="tb-btn" href="index.html">← 返回主页</a>
+    <button class="tb-btn" onclick="window.print()">🖨 打印 / 存为 PDF</button>
+  </div>
+
+  <div class="sheet">
+
+    <!-- ===== 页眉 ===== -->
+    <header class="cv-head">
+      <div>
+        <h1>李子林</h1>
+        <p class="cv-contact">📞 (+86) 19980528634 ｜ 📧 2023141461067@stu.scu.edu.cn ｜ 🐙 github.com/zlven</p>
+        <p class="cv-edu">四川大学 · 软件工程专业 · 本科 2023 级 ｜ 籍贯：中国台湾</p>
+        <p class="cv-research">研究兴趣：扩散模型高效推理 · Diffusion Transformers 加速 · AIGC</p>
+      </div>
+      <img class="cv-photo" src="assets/11.jpg" alt="李子林">
+    </header>
+
+    <!-- ===== 科研经历 ===== -->
+    <section>
+      <h2>科研经历</h2>
+
+      <div class="entry">
+        <p class="entry-title">ExProp: Exponential Propagation on Implicit Manifolds for Training-Free DiT Acceleration</p>
+        <p class="entry-meta"><strong>第一作者</strong> · <em>AAAI 2027</em> 在投 (Under Review) · 2026.05 – 2026.07</p>
+        <p class="entry-desc">面向现有特征预测方法仅按欧氏空间轨迹外推、忽视扩散轨迹隐流形结构的问题，提出无需训练的 ExProp 加速方法：将特征预测重构为隐流形上的局部指数传播，通过局部信任域机制约束几何有效邻域，在 Flux.1-dev、DiT-XL/2 与 HunyuanVideo 等主流模型上优于现有特征缓存与预测方法。</p>
+      </div>
+
+      <div class="entry">
+        <p class="entry-title">HDS: Heterogeneity-Driven Safeguarding for Accelerating Diffusion Transformers</p>
+        <p class="entry-meta"><strong>第一作者</strong> · <em>NeurIPS 2026</em> 在投 (Under Review) · 2026.03 – 2026.05</p>
+        <p class="entry-desc">面向现有预测加速方法忽略误差影响跨层异质性、难以兼顾质量与效率的问题，提出无需训练的 HDS 加速框架：基于预测误差影响具有时间稳定层间异质性的发现，设计异质性分数（HS）在线评估各层风险，对脆弱层保留完整计算、对稳健层激进加速，在多种 DiT 架构与预测方案上以可忽略开销提升质量–效率帕累托前沿。</p>
+      </div>
+
+      <div class="entry">
+        <p class="entry-title">FADE: Fractional Anomalous Dynamics Extrapolation for Training-Free Diffusion Transformers Acceleration</p>
+        <p class="entry-meta"><strong>第二作者</strong> · <em>NeurIPS 2026</em> 在投 (Under Review) · 2026.03 – 2026.05</p>
+        <p class="entry-desc">面向扩散 Transformer 潜在轨迹非平稳、高曲率导致整数阶预测算子误差累积的问题，提出无需训练的 FADE 加速框架：以反常扩散刻画特征演化，采用 Mittag–Leffler 分数阶算子适配高曲率非线性轨迹，并通过离线多维建模实现推理期近零开销的自适应参数检索，在多种架构与模态上实现领先的加速与保真度权衡。</p>
+      </div>
+
+      <div class="entry">
+        <p class="entry-title">BRACE: Taming Sharp Irregularities via Barycentric Rational Forecasting for Fast Diffusion Transformers Inference</p>
+        <p class="entry-meta"><strong>第二作者</strong> · <em>ACM Multimedia (MM) 2026</em> 已接收 (Poster) · 2025.11 – 2026.04</p>
+        <p class="entry-desc">面向扩散 Transformer 推理开销大、现有长步长预测稳定性不足的问题，提出无需训练的 BRACE 加速框架：通过局部滑动窗口、重心有理外推与自适应 Chebyshev 权重实现中间特征稳定预测，在 DiT-XL/2、FLUX.1-dev 与 HunyuanVideo 上均取得优于现有方法的质量–效率权衡。</p>
+      </div>
+
+      <div class="entry">
+        <p class="entry-title">LaBACK: From Feature Forecasting to Trajectory-Drift Control for Efficient Flow Matching Sampling</p>
+        <p class="entry-meta"><strong>第二作者</strong> · <em>AAAI 2027</em> 在投 (Under Review) · 2026.05 – 2026.07</p>
+        <p class="entry-desc">面向流匹配采样中缓存引入的速度误差沿轨迹传播造成生成漂移的问题，提出无需训练的 LaBACK 加速方法：以 Laurent 级数引导的特征预测降低近似误差，并引入确定性回溯抑制误差沿采样轨迹传播，在文生图、蒸馏文生图与文生视频任务上取得更优的速度–质量权衡。</p>
+      </div>
+    </section>
+
+    <!-- ===== 实习经历 ===== -->
+    <section>
+      <h2>实习经历</h2>
+      <div class="entry">
+        <p class="exp-org">山西省智慧交通实验室有限公司（信息技术研究院） · 算法工程师</p>
+        <p class="entry-meta">2026.07 – 2026.08</p>
+        <p class="entry-desc">
+          参与黑光相机低光照场景下计算机视觉检测模型的训练与调优，面向弱光 / 夜间小目标检测优化多尺度特征表达与模型结构，结合模型压缩实现轻量化部署，提升目标检测与识别性能。<br>
+          参与撰写《改扩建工地无人机视觉违规识别与远程喊话干预系统》发明专利（在审），包括算法设计、可行性分析等。
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 个人荣誉 ===== -->
+    <section>
+      <h2>个人荣誉</h2>
+      <ul class="cv-list">
+        <li><span class="li-year">2026</span>Medical Grand Challenge（NUS）Open 赛道第四名</li>
+        <li><span class="li-year">2025</span>全国大学生数学建模竞赛 四川省二等奖</li>
+        <li><span class="li-year">2025</span>中国高校计算机大赛 - AIGC 创新赛 西南赛区三等奖</li>
+        <li><span class="li-year">2024</span>全国大学生数学建模竞赛 四川省一等奖</li>
+        <li>四川大学优秀学生干部</li>
+      </ul>
+    </section>
+
+    <!-- ===== 专业技能 ===== -->
+    <section>
+      <h2>专业技能</h2>
+      <ul class="cv-list skill">
+        <li><b>技术栈：</b>Python、PyTorch、Java、C / C++、Linux、Git 等</li>
+        <li>掌握操作系统、计算机网络、数据结构与算法、深度学习等相关基础知识</li>
+        <li><b>英语水平：</b>CET-4（529）、CET-6（469）</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+</html>
