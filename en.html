@@ -106,9 +106,32 @@
           <span class="pub-number">[2]</span>
           <div class="pub-content">
             <h4>FADE: Fractional Anomalous Dynamics Extrapolation for Training-Free Diffusion Transformers Acceleration</h4>
-            <p class="pub-authors">Jinlong Yang*, <strong>Zilin Li</strong>*, Jinke Wu, Yao Zhou</p>
+            <p class="pub-authors">Jinlong Yang, <strong>Zilin Li</strong>, Jinke Wu, Yao Zhou</p>
             <p class="pub-summary">Latent trajectories of diffusion Transformers are non-stationary with high curvature, causing error accumulation in integer-order prediction operators. FADE characterizes feature evolution as anomalous diffusion and adopts Mittag&ndash;Leffler fractional operators matched to high-curvature nonlinear trajectories, with near-zero-overhead adaptive parameter retrieval at inference via offline multi-dimensional modeling, delivering state-of-the-art speed&ndash;fidelity trade-offs across architectures and modalities.</p>
             <p class="pub-venue"><em>NeurIPS 2026</em> · Accepted <span class="pub-badge ok">CCF-A</span></p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2611.10514" target="_blank">[arXiv]</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item reveal">
+          <span class="pub-number">[3]</span>
+          <div class="pub-content">
+            <h4>ExProp: Exponential Propagation on Implicit Manifolds for Training-Free DiT Acceleration</h4>
+            <p class="pub-authors"><strong>Zilin Li</strong>, Jinlong Yang, Jinke Wu, Yao Zhou</p>
+            <p class="pub-summary">Existing feature-prediction methods extrapolate along Euclidean trajectories and ignore the implicit-manifold structure of diffusion trajectories. ExProp reformulates feature prediction as local exponential propagation on the implicit manifold and constrains the geometrically valid neighborhood via a local trust-region mechanism, outperforming existing feature-caching and prediction methods on Flux.1-dev, DiT-XL/2, and HunyuanVideo.</p>
+            <p class="pub-venue"><em>CVPR 2027</em> · Under Review <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
+          </div>
+        </div>
+
+        <div class="pub-item reveal">
+          <span class="pub-number">[4]</span>
+          <div class="pub-content">
+            <h4>HDS: Heterogeneity-Driven Safeguarding for Accelerating Diffusion Transformers</h4>
+            <p class="pub-authors"><strong>Zilin Li</strong>, Jinlong Yang, Jinke Wu, Yao Zhou</p>
+            <p class="pub-summary">Existing prediction-based acceleration methods ignore the cross-layer heterogeneity of prediction-error impact and struggle to balance quality and efficiency. HDS is a training-free framework that, based on the discovery of temporally stable inter-layer heterogeneity, evaluates each layer&rsquo;s risk online with a heterogeneity score (HS): fragile layers keep full computation while robust layers are aggressively accelerated, advancing the quality&ndash;efficiency Pareto frontier across DiT architectures at negligible overhead.</p>
+            <p class="pub-venue"><em>CVPR 2027</em> · Under Review <span class="pub-badge" style="background: #fef3c7; color: #92400e;">Under Review</span></p>
           </div>
         </div>
 
